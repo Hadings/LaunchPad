@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Edge-Time Capture/timer.cpp&apos; to &apos;timer.c&apos;" description="Rename resource &apos;timer.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="timer.cpp" name="timer.c" stamp="1513009420690" updateReferences="true"/>
+</session>

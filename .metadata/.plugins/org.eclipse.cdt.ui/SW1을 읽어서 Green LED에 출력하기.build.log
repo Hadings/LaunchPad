@@ -1,0 +1,9 @@
+
+**** Build of configuration Debug for project SW1을 읽어서 Green LED에 출력하기 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+makefile:140: recipe for target 'all' failed
+gmake[1]: *** No rule to make target 'SW1???쎌뼱??Green LED??異쒕젰?섍린.out'.
+gmake: *** [all] Error 2
+
+**** Build Finished ****

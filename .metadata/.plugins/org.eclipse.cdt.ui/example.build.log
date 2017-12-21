@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project example ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/example" -I"C:/Users/cykim/Desktop/embedded programming/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o" -o"main.o"  "../main.c"
+subdir_rules.mk:9: recipe for target 'main.o' failed
+../main.c: In function 'main':
+../main.c:10:15: error: assignment of read-only member 'CR'
+     GPIOF->CR = 0x01; /* make PORTF0 configurable */
+               ^
+../main.c: In function 'GPIOF_Handler':
+../main.c:46:18: warning: variable 'readback' set but not used [-Wunused-but-set-variable]
+     volatile int readback;
+                  ^~~~~~~~
+../main.c:45:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+gmake: *** [main.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

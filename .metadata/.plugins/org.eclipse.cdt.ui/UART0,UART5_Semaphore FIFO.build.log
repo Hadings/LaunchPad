@@ -1,0 +1,71 @@
+
+**** Build of configuration Debug for project UART0,UART5_Semaphore FIFO ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../osasm.s'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/UART0,UART5_Semaphore FIFO" -I"C:/Users/cykim/Desktop/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"osasm.d" -MT"osasm.o" -x assembler -o"osasm.o"  "../osasm.s"
+'Finished building: ../osasm.s'
+' '
+'Building file: ../queue.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/UART0,UART5_Semaphore FIFO" -I"C:/Users/cykim/Desktop/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"queue.d" -MT"queue.o" -o"queue.o"  "../queue.c"
+../queue.c: In function 'OS_FIFO_Put':
+../queue.c:23:13: warning: implicit declaration of function 'OS_Signal' [-Wimplicit-function-declaration]
+             OS_Signal(&size );
+             ^~~~~~~~~
+../queue.c: In function 'OS_FIFO_Get':
+../queue.c:29:5: warning: implicit declaration of function 'OS_Wait' [-Wimplicit-function-declaration]
+     OS_Wait(&size);
+     ^~~~~~~
+'Finished building: ../queue.c'
+' '
+'Building file: ../os.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/UART0,UART5_Semaphore FIFO" -I"C:/Users/cykim/Desktop/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"os.d" -MT"os.o" -o"os.o"  "../os.c"
+'Finished building: ../os.c'
+' '
+'Building file: ../serial.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/UART0,UART5_Semaphore FIFO" -I"C:/Users/cykim/Desktop/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"serial.d" -MT"serial.o" -o"serial.o"  "../serial.c"
+'Finished building: ../serial.c'
+' '
+'Building file: ../tm4c123gh6pm_startup_ccs_gcc.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/UART0,UART5_Semaphore FIFO" -I"C:/Users/cykim/Desktop/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"tm4c123gh6pm_startup_ccs_gcc.d" -MT"tm4c123gh6pm_startup_ccs_gcc.o" -o"tm4c123gh6pm_startup_ccs_gcc.o"  "../tm4c123gh6pm_startup_ccs_gcc.c"
+'Finished building: ../tm4c123gh6pm_startup_ccs_gcc.c'
+' '
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/cykim/Desktop/embedded programming/UART0,UART5_Semaphore FIFO" -I"C:/Users/cykim/Desktop/CMSIS/Include" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o" -o"main.o"  "../main.c"
+../main.c: In function 'counting_op':
+../main.c:24:5: warning: implicit declaration of function 'OS_Wait' [-Wimplicit-function-declaration]
+     OS_Wait(&mutex);
+     ^~~~~~~
+../main.c:30:5: warning: implicit declaration of function 'OS_Signal' [-Wimplicit-function-declaration]
+     OS_Signal(&mutex);
+     ^~~~~~~~~
+../main.c: In function 'Task3':
+../main.c:63:9: warning: implicit declaration of function 'transmitMessage' [-Wimplicit-function-declaration]
+         transmitMessage();
+         ^~~~~~~~~~~~~~~
+../main.c: At top level:
+../main.c:69:6: warning: conflicting types for 'transmitMessage'
+ void transmitMessage() { // 메시지 전달
+      ^~~~~~~~~~~~~~~
+../main.c:63:9: note: previous implicit declaration of 'transmitMessage' was here
+         transmitMessage();
+         ^~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: UART0,UART5_Semaphore FIFO.out'
+'Invoking: GNU Linker'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -DPART_TM4C123GH6PM -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"UART0,UART5_Semaphore FIFO.map" --entry ResetISR -o"UART0,UART5_Semaphore FIFO.out" "./main.o" "./os.o" "./osasm.o" "./queue.o" "./serial.o" "./tm4c123gh6pm_startup_ccs_gcc.o" -Wl,-T"../tm4c123gh6pm.lds"  -Wl,--start-group -lc -Wl,--end-group 
+makefile:148: recipe for target 'UART0,UART5_Semaphore FIFO.out' failed
+c:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot find UART5_Semaphore FIFO.map: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+gmake[1]: *** [UART0,UART5_Semaphore FIFO.out] Error 1
+gmake: *** [all] Error 2
+makefile:144: recipe for target 'all' failed
+
+**** Build Finished ****
